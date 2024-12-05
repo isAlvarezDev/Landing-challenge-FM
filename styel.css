@@ -3,6 +3,7 @@
 :root{
     --font: "Source Code Pro", monospace;
     --black: #000000;
+    --white: white;
 }
 
 *{
@@ -22,7 +23,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 750px;
     gap: 70px;
 }
 
@@ -52,7 +53,7 @@ body{
 
 .img{
     width: 500px;
-    min-height: 150px;
+    min-height: 190px;
     border-radius: 50%;
     height: 100px;
 }
@@ -77,6 +78,10 @@ body{
     width: 25px;
 }
 
+.description{
+    padding: 20px;
+}
+
 .cards{
     display: flex;
     gap: 20px;
@@ -90,6 +95,8 @@ body{
     padding: 10px;
     text-decoration: none;
     color: var(--black);
+    border: 1px solid var(--white);
+    transition: border 0.3s ease;
 }
 
 .card:hover{
