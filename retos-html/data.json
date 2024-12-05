@@ -4,5 +4,29 @@
     "imgUrl":"./retos/reto-1/design/desktop-design.jpg",
     "name": "QR code component",
     "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-2/index.html",
+        "imgUrl":"./retos/reto-2/design/desktop-design.jpg",
+        "name": "Results summary component",
+        "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-3/index.html",
+        "imgUrl":"./retos/reto-3/design/desktop-design.jpg",
+        "name": "Results NFT preview card component",
+        "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-4/index.html",
+        "imgUrl":"./retos/reto-4/design/desktop-design.jpg",
+        "name": "Order summary card",
+        "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-5/index.html",
+        "imgUrl":"./retos/reto-5/design/desktop-design.jpg",
+        "name": "Product preview card component",
+        "description": "esta es una descripcion del challenge"
     }
 ]
