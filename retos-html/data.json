@@ -1,8 +1,8 @@
 [
     {
-    "url": "retos/reto-1-testimonials-grid-section-main/index.html",
-    "imgUrl":"retos/reto-1-testimonials-grid-section-main/design/desktop-design.jpg",
-    "name": "Testimonials grid section main",
+    "url": "retos/reto1/index.html",
+    "imgUrl":"retos/reto1/design/desktop-design.jpg",
+    "name": "QR code component",
     "description": "esta es una descripcion del challenge"
     }
 ]
