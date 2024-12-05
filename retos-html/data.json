@@ -1,7 +1,7 @@
 [
     {
-    "url": "retos/reto1/index.html",
-    "imgUrl":"retos/reto1/design/desktop-design.jpg",
+    "url": "./retos/reto-1/index.html",
+    "imgUrl":"./retos/reto-1/design/desktop-design.jpg",
     "name": "QR code component",
     "description": "esta es una descripcion del challenge"
     }
