@@ -28,5 +28,47 @@
         "imgUrl":"./retos/reto-5/design/desktop-design.jpg",
         "name": "Product preview card component",
         "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-6/index.html",
+        "imgUrl":"./retos/reto-6/design/desktop-design.jpg",
+        "name": "Social proof section",
+        "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-7/index.html",
+        "imgUrl":"./retos/reto-7/design/desktop-design.jpg",
+        "name": "Stats preview card component",
+        "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-8/index.html",
+        "imgUrl":"./retos/reto-8/design/desktop-design.jpg",
+        "name": "3-column preview card component",
+        "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-9/index.html",
+        "imgUrl":"./retos/reto-9/design/desktop-design.jpg",
+        "name": "Profile card component",
+        "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-10/index.html",
+        "imgUrl":"./retos/reto-10/design/desktop-design.jpg",
+        "name": "Four card feature section",
+        "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-11/index.html",
+        "imgUrl":"./retos/reto-11/design/desktop-design.jpg",
+        "name": "Single Price Grid Component",
+        "description": "esta es una descripcion del challenge"
+    },
+    {
+        "url": "./retos/reto-12/index.html",
+        "imgUrl":"./retos/reto-12/design/desktop-design.jpg",
+        "name": "Huddle landing page with single introductory section",
+        "description": "esta es una descripcion del challenge"
     }
 ]
