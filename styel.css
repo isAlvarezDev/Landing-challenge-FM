@@ -4,6 +4,7 @@
     --font: "Source Code Pro", monospace;
     --black: #000000;
     --white: white;
+    --shadow: rgba(92, 92, 92, 0.119);
 }
 
 *{
@@ -23,15 +24,15 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    max-width: 750px;
-    gap: 70px;
+    max-width: 900px;
 }
 
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 25px;
+    padding: 20px;
 }
 
 .bio-container{
@@ -39,35 +40,38 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .title{
     text-align: left;
     width: 100%;
-    padding: 0 20px;
 }
 
 .bio{
-    padding: 20px;
+    max-width: 700px;
+    padding: 20px 0;
 }
 
-.img{
-    width: 500px;
-    min-height: 190px;
+.img {
+    width: 200px;
+    height: 200px;
+    min-width: 150px;
     border-radius: 50%;
-    height: 100px;
-}
-
-.photo{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px var(--shadow);
+}
+
+.photo {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
 }
 
 .lenguajes{
-    padding: 0 20px;
     display: flex;
     justify-content: flex-start;
     gap: 20px;
@@ -84,10 +88,12 @@ body{
 
 .cards{
     display: flex;
+    padding: 10px;
     gap: 20px;
 }
 
 .card{
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 20px;
