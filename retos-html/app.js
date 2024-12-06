@@ -15,7 +15,7 @@ fetch("data.json")
                         <img class="pick-challenge" src="${imgUrl}" alt="">
                     </div>
                     <div class="text-container">
-                        <h3 class="title-challenge">${name}</h3>
+                        <h4 class="title-challenge">${name}</h4>
                         <p class="p-challenge">${description}</p>
                     </div>
                 </a>
