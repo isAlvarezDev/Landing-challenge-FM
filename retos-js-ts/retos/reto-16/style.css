@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+
+    --fonty: "Epilogue", sans-serif;
+}
+
+body{
+    font-family: var(--fonty);
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+header{
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-right: 30px;
+}
+
+.nav-menu-container, .nav-login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+li{
+    cursor: pointer;
+    color: var(--Medium-Gray);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login, .register{
+    padding: 15px 20px;
+}
+
+.register{
+    border: 1px solid var(--Medium-Gray);
+    border-radius: 10px;
+}
+
+/* main */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    max-width: 1150px;
+}
+
+.container-info{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 560px;
+}
+
+.art-desktop{
+    max-width: 420px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
