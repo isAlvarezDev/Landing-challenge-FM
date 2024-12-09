@@ -13,20 +13,59 @@
 <body>
 
   <header>
-    <nav class="nav-menu-container">
-      <img src="intro-section-with-dropdown-navigation-main/images/logo.svg" alt="logo" class="logo">
-      <li class="features">Features <img src="intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" alt=""></li>
-      <li class="company">Company <img src="intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" alt=""></li>
-      <li class="careers">Careers</li>
-      <li class="about">About</li>
-    </nav>
-    <nav class="nav-login-container">
-      <li class="login">Login</li>
-      <li class="register">Register</li>
-    </nav>
+    <img src="intro-section-with-dropdown-navigation-main/images/logo.svg" alt="logo" class="logo">
+    <img src="intro-section-with-dropdown-navigation-main/images/icon-menu.svg" alt="icon.menu" class="icon-menu">
+    <div class="navi-menu">
+    <img src="intro-section-with-dropdown-navigation-main/images/icon-close-menu.svg" alt="icon-close-menu" class="icon-close-menu">
+      <nav class="nav-menu-container">
+        <li class="features">
+          <div class="freatures-div">
+            Features
+            <img class="arrow-features" src="intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" alt="arrow">
+          </div>
+          <ul class="dropdown-features">
+            <li>
+              <img src="intro-section-with-dropdown-navigation-main/images/icon-todo.svg" alt="">
+              Todo List
+            </li>
+            <li>
+              <img src="intro-section-with-dropdown-navigation-main/images/icon-calendar.svg" alt="">
+              Calendar
+            </li>
+            <li>
+              <img src="intro-section-with-dropdown-navigation-main/images/icon-reminders.svg" alt="">
+              Reminders
+            </li>
+            <li>
+              <img src="intro-section-with-dropdown-navigation-main/images/icon-planning.svg" alt="">
+              Planning
+            </li>
+          </ul>
+        </li>
+        <li class="company">
+          <div class="company-div">
+            Company
+            <img class="arrow-company" src="intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" alt="">
+          </div>
+          <ul class="dropdown-company">
+            <li>Histoy</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li class="careers">Careers</li>
+        <li class="about">About</li>
+      </nav>
+      <nav class="nav-login-container">
+        <li class="login">Login</li>
+        <li class="register">Register</li>
+      </nav>
+    </div>
+   
   </header>
 
   <main>
+    <img src="intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png" alt="art-mobile" class="art-mobile">
     <div class="container-info">
       <div class="container-text">
         <h1 class="title">Make remote work</h1>
@@ -47,8 +86,9 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">JuSeRDev</a>.
+    Coded by <a href="https://github.com/JuSeRDev/Landing-challenge-FM/tree/main/retos-js-ts/retos/reto-16">JuSeRDev</a>.
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
 
