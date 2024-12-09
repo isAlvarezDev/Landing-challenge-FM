@@ -72,10 +72,14 @@ body{
 
 .container-challenge{
     max-width: 290px;
-    height: 315px;
+    height: 350px;
     border-radius: 12px;
     background: var(--white);
     border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
     /* transition: transform 0.3s ease, var(--border) 0.3s ease; */
     /* border: 1px solid var(--border); */
 }
@@ -93,6 +97,26 @@ body{
 }
 
 .p-challenge{
+    font-size: 12px;
+}
+
+.lenguajes-container{
+    height: 50px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 15px;
+}
+
+.html-svg, .css-svg, .js-svg, .ts-svg{
+    width: 20px;
+    height: 20px;
+}
+
+.filter{
     font-size: 12px;
 }
 
