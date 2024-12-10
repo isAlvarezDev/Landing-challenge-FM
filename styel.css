@@ -5,12 +5,17 @@
     --black: #000000;
     --white: white;
     --shadow: rgba(92, 92, 92, 0.119);
+    --dark: #021526;
+    --light: #ffffff;
+    /* color-scheme: light dark; */
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background: light-dark(var(--light), var(--dark));
+    color: light-dark(var(--dark), var(--light));
 }
 
 body{
@@ -100,13 +105,12 @@ body{
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
-    color: var(--black);
-    border: 1px solid var(--white);
+    border: 1px solid light-dark(var(--light),var(--dark));
     transition: border 0.3s ease;
 }
 
 .card:hover{
-    border: 1px solid var(--black);
+    border: 1px solid light-dark(var(--dark),var(--light));
 }
 
 .img-fm-html, .img-fm-ts{
@@ -114,10 +118,9 @@ body{
 }
 
 .thanks {
-    font-size: 12px;
+    font-size: 10px;
     max-width: 750px;
     text-align: center;
     margin: 20px 0;
-    color: var(--black);
     font-weight: 400;
 }

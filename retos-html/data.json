@@ -4,42 +4,42 @@
         "imgUrl":"./retos/reto-18/design/desktop-preview.jpg",
         "name": "Fylo landing page with two column layout",
         "description": "Landing page de Fylo con un diseño de dos columnas que equilibra información visual y textual de manera eficiente.",
-        "filter": "Newbie"
+        "filter": "Junior"
     },
     {
         "url": "./retos/reto-17/index.html",
         "imgUrl":"./retos/reto-17/design/desktop-preview.jpg",
         "name": "Fylo landing page with two column layout",
         "description": "Landing page que destaca los servicios de Fylo con un diseño de dos columnas moderno y funcional.",
-        "filter": "Newbie"
+        "filter": "Junior"
     },
     {
         "url": "./retos/reto-16/index.html",
         "imgUrl":"./retos/reto-16/design/desktop-preview.jpg",
         "name": "Huddle landing page with alternating feature blocks",
         "description": "Página de Huddle con bloques de características alternados que crean un diseño dinámico y atractivo.",
-        "filter": "Newbie"
+        "filter": "Junior"
     },
     {
         "url": "./retos/reto-15/index.html",
         "imgUrl":"./retos/reto-15/design/desktop-preview.jpg",
         "name": "Clipboard landing page",
         "description": "Landing page de Clipboard que combina diseño limpio y funcionalidad para destacar características clave del producto.",
-        "filter": "Newbie"
+        "filter": "Junior"
     },
     {
         "url": "./retos/reto-14/index.html",
         "imgUrl":"./retos/reto-14/design/desktop-design.jpg",
         "name": "Fylo data storage component",
         "description": "Componente que presenta soluciones de almacenamiento de datos de Fylo con un diseño visualmente equilibrado.",
-        "filter": "Newbie"
+        "filter": "Junior"
     },
     {
         "url": "./retos/reto-13/index.html",
         "imgUrl":"./retos/reto-13/design/desktop-design.jpg",
         "name": "Testimonials grid section",
         "description": "Sección de cuadrícula que muestra testimonios de usuarios con un diseño limpio y bien organizado.",
-        "filter": "Newbie"
+        "filter": "Junior"
     },
     {
         "url": "./retos/reto-12/index.html",
