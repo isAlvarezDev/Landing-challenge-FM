@@ -44,7 +44,8 @@ body{
 .container-general{
     display: flex;
     gap: 20px;
-    max-height: 520px;
+    /* max-height: 520px; */
+    margin: 20px 0;
 }
 
 .container-person{
