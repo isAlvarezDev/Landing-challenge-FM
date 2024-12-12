@@ -51,6 +51,7 @@ body{
 .title{
     text-align: left;
     width: 100%;
+    padding-bottom: 5px;
 }
 
 .bio{
@@ -62,19 +63,18 @@ body{
     width: 200px;
     height: 200px;
     min-width: 150px;
-    border-radius: 50%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    box-shadow: 5px 5px 10px var(--shadow);
+    border-radius: 40%; /* estp esta horrible, debo corregir la foto obviamente */
 }
 
 .photo {
     width: 100%; 
     height: 100%;
-    object-fit: cover;
-}
+    object-fit: contain;
+  }
 
 .lenguajes{
     display: flex;
