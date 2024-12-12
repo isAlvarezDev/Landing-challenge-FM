@@ -199,12 +199,12 @@ body{
 
 @media (width <= 600px){
     
-    /* body{
+    body{
         height: 100%;
         display: flex;
         flex-direction: column;
         place-content: auto;
-    } */
+    }
 
     .container-general{
         width: 100%;
