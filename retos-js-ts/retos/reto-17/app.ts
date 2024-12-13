@@ -1,5 +1,3 @@
-
-
 interface activity {
     title: string
     class: string
