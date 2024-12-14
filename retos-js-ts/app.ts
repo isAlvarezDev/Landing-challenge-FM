@@ -5,7 +5,6 @@ interface Data {
     description: string,
     filter: string,
 }
-
 const mainTS = document.querySelector(".main") as HTMLDivElement
 
 fetch("data.json")
