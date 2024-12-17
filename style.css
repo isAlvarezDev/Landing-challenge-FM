@@ -44,12 +44,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .title{
     text-align: left;
-    width: 100%;
     padding-bottom: 5px;
 }
 
@@ -117,6 +115,7 @@ body{
 
 .card:hover{
     border: 1px solid light-dark(var(--dark),var(--light));
+    
 }
 
 .img-fm-html, .img-fm-ts{
@@ -129,4 +128,42 @@ body{
     text-align: center;
     margin: 20px 0;
     font-weight: 400;
+}
+
+@media (width <= 600px) {
+    .container{
+        width: 100%;
+    }
+
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .img{
+        display: none;
+    }
+
+    .photo{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+        width: 50px;
+    }
+
+    .photo-mobile{
+        width: 80%;
+        display: block;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
 }
