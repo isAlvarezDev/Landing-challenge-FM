@@ -17,35 +17,40 @@
 <body>
   <main>
     <div class="container-splitter">
-      <p class="title">spli</p>
-      <p class="title">tter</p>
+      <p class="title">S P L I</p>
+      <p class="title">T T E R</p>
     </div>
     <div class="container-general">
       <section class="container-inputs">
-        <label for="bill" class="label-bill">Bill</label>
-        <input type="text" class="input-bill" name="bill">
+        <div class="container-bill">
+          <label for="bill" class="label-bill">Bill</label>
+          <input type="text" class="input-bill" name="bill">
+        </div>
         <p class="title-select">Select Tip %</p>
         <div class="percentage">
-          <p class="5">5%</p>
-          <p class="10">10%</p>
-          <p class="15">15%</p>
-          <p class="25">25%</p>
-          <p class="50">50%</p>
-          <input type="text" placeholder="Custom"></input>
+          <p class="porcentage-number porcentage-5">5%</p>
+          <p class="porcentage-number porcentage-10">10%</p>
+          <p class="porcentage-number porcentage-15">15%</p>
+          <p class="porcentage-number porcentage-25">25%</p>
+          <p class="porcentage-number porcentage-50">50%</p>
+          <input type="text" placeholder="Custom" class="custom"></input>
         </div>
-        <label class="label-number" for="number">Number of People</label>
-        <input type="text" class="number-people" name="number">
+        <div class="container-number-of-people">
+          <label class="label-number" for="number">Number of People</label>
+          <input type="text" class="number-people" name="number">
+        </div>
       </section>
+
       <section class="container-amount">
         <div class="tip-amount">
           <p class="amount">Tip Amount</p>
           <p class="t-amount">/ person</p>
-          <p class="result-tip-amount"></p>
+          <p class="result-tip-amount">$0.00</p>
         </div>
         <div class="container-total">
           <p class="total">Total</p>
           <p class="t-total">/ person</p>
-          <p class="total"></p>
+          <p class="total">$0.00</p>
         </div>
         <p class="rest">Reset</p>
       </section>
