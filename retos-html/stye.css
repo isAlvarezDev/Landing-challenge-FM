@@ -89,11 +89,6 @@ body{
     /* border: 1px solid var(--border); */
 }
 
-.container-challenge:hover{
-    transform: scale(1.02);
-    /* border: 1px solid light-dark(var(--dark),var(--light)); */
-}
-
 .text-container{
     display: flex;
     flex-direction: column;
@@ -135,6 +130,7 @@ body{
     height: 180px;
     position: relative;
     overflow: hidden;
+    border-radius: 15px 15px 0 0;
 }
 
 .pick-challenge{
@@ -145,6 +141,11 @@ body{
     object-fit: cover;
     position: absolute;
     width: fit-content 16/9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container-challenge:hover .pick-challenge{
+    transform: scale(1.1);
 }
 
 .thanks {
