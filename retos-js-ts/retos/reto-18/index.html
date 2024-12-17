@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="title">spli</p>
+    <p class="title">tter</p>
+  </header>
+  
+  <main>
+    <div class="container-general">
+      <section class="container-inputs">
+        <label for="bill" class="label-bill">Bill</label>
+        <input type="text" class="input-bill" name="bill">
+        <p class="title-select">Select Tip %</p>
+        <div class="percentage">
+          <p class="5">5%</p>
+          <p class="10">10%</p>
+          <p class="15">15%</p>
+          <p class="25">25%</p>
+          <p class="50">50%</p>
+          <input type="text" placeholder="Custom"></input>
+        </div>
+        <label class="label-number" for="number">Number of People</label>
+        <input type="text" class="number-people" name="number">
+      </section>
+      <section class="container-amount">
+        <div class="tip-amount">
+          <p class="amount">Tip Amount</p>
+          <p class="t-amount">/ person</p>
+          <p class="result-tip-amount"></p>
+        </div>
+        <div class="container-total">
+          <p class="total">Total</p>
+          <p class="t-total">/ person</p>
+          <p class="total"></p>
+        </div>
+        <p class="rest">Reset</p>
+      </section>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">JuSeRDev</a>.
+  </div>
+</body>
+</html>
