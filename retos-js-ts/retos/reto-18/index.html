@@ -8,11 +8,6 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
@@ -42,17 +37,23 @@
       </section>
 
       <section class="container-amount">
-        <div class="tip-amount">
-          <p class="amount">Tip Amount</p>
-          <p class="t-amount">/ person</p>
-          <p class="result-tip-amount">$0.00</p>
+        <div class="container-amount-total">
+          <div class="tip-amount">
+            <div class="tip-amount-info">
+              <p class="amount">Tip Amount</p>
+              <p class="t-person">/ person</p>
+            </div>
+            <p class="result-tip-amount">$0.00</p>
+          </div>
+          <div class="container-total">
+            <div class="container-total-div">
+              <p class="total-text">Total</p>
+              <p class="t-person">/ person</p>
+            </div>
+            <p class="total">$0.00</p>
+          </div>
         </div>
-        <div class="container-total">
-          <p class="total">Total</p>
-          <p class="t-total">/ person</p>
-          <p class="total">$0.00</p>
-        </div>
-        <p class="rest">Reset</p>
+        <p class="reset">RESET</p>
       </section>
     </div>
   </main>

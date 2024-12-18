@@ -55,8 +55,7 @@ main{
     max-width: 920px;
 }
 
-.container-inputs, .container-amount{
-    padding: 20px;
+.container-inputs{
 }
 
 .container-bill, .container-number-of-people{
@@ -91,7 +90,58 @@ main{
 }
 
 .container-amount{
-    background: var(--Very-dark-cyan);
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
+    padding: 50px 20px 30px 20px;
+    justify-content: space-between;
+    background: var(--Very-dark-cyan);
     color: var(--Light-grayish-cyan);
 }
+
+.tip-amount-info, .container-total-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-amount-total{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tip-amount, .container-total{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.amount, .total-text{
+    width: 80px;
+    font-size: 14px;
+    color: var(--White);
+}
+
+.t-person{
+    color: var(--Strong-cyan);
+    font-size: 10px;
+}
+
+.result-tip-amount, .total{
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--Strong-cyan);
+}
+
+.reset{
+    text-align: center;
+    color: var(--Very-dark-cyan);
+    background: var(--Dark-grayish-cyan);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a {font-size: 11px; color: hsl(228, 45%, 44%); }
