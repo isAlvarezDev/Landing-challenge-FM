@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
     /* ## Colors */
@@ -16,7 +16,7 @@
     --Very-light-grayish-cyan: hsl(189, 41%, 97%);
     --White: hsl(0, 0%, 100%);
 
-    --font-famuly: "Rubik", serif;
+    --font-famuly: "Space Mono", serif;
 }
 
 *{
@@ -56,6 +56,31 @@ main{
 }
 
 .container-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.container-bill, .container-number-of-people{
+    gap: 10px;
+}
+
+.label-bill, .title-select, .label-number, label-number{
+    font-size: 16px;
+    color: var(--Very-dark-cyan);
+}
+.title-select{
+    margin-top: 30px;
+}
+
+.input-bill, .number-people{
+    /* direction: rtl; */
+    border: none;
+    background: var(--Very-light-grayish-cyan);
+    border-radius: 5px;
+    text-align: right;
+    padding: 5px 20px;
 }
 
 .container-bill, .container-number-of-people{
@@ -65,6 +90,7 @@ main{
 
 .percentage{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -114,7 +140,7 @@ main{
 .tip-amount, .container-total{
     display: flex;
     align-items: center;
-    gap: 200px;
+    gap: 150px;
 }
 
 .amount, .total-text{
@@ -138,8 +164,8 @@ main{
     text-align: center;
     color: var(--Very-dark-cyan);
     background: var(--Dark-grayish-cyan);
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 5px;
+    padding: 10px;
     font-size: 20px;
 }
 
