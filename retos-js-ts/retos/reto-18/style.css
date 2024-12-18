@@ -43,6 +43,11 @@ main{
     gap: 20PX;
 }
 
+.title{
+    color: var(--Dark-grayish-cyan);
+    font-weight: 700;
+}
+
 .container-splitter{
     text-align: center;
 }
@@ -66,21 +71,44 @@ main{
     gap: 10px;
 }
 
-.label-bill, .title-select, .label-number, label-number{
+.label-bill, .title-select, .label-number{
     font-size: 16px;
-    color: var(--Very-dark-cyan);
+    font-weight: 700;
+    color: var(--Grayish-cyan);
 }
+
+.input-container{
+    position: relative;
+}
+
+.icon-dollar, .icon-person{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .title-select{
     margin-top: 30px;
 }
 
 .input-bill, .number-people{
-    /* direction: rtl; */
+    all: unset;
     border: none;
     background: var(--Very-light-grayish-cyan);
     border-radius: 5px;
     text-align: right;
     padding: 5px 20px;
+    width: 90%;
+    font-weight: 700;
+}
+
+.input-bill:focus, .number-people:focus{
+    border: 2px solid var(--Dark-grayish-cyan);
+}
+
+.number-people-error{
+    border: 2px solid red;
 }
 
 .container-bill, .container-number-of-people{
@@ -103,16 +131,32 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.porcentage-number:hover{
+    color: var(--Very-dark-cyan);
+    background: var(--Light-grayish-cyan);
+}
+
+.porcentage-number-active{
+    background: var(--Dark-grayish-cyan);
 }
 
 .custom{
     width: 117px;
     height: 48px;
+    text-align: right;
     border-radius: 10px;
-    color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
     border: none;
     background: var(--Very-light-grayish-cyan);
-    text-indent: 20px;
+    padding: 5px;
+}
+
+.custom::placeholder{
+    text-align: center;
 }
 
 .container-amount{
@@ -123,6 +167,24 @@ main{
     justify-content: space-between;
     background: var(--Very-dark-cyan);
     color: var(--Light-grayish-cyan);
+}
+
+.label-container{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.error{
+    font-size: 10px;
+    height: 0;
+    overflow: hidden;
+    color: red;
+    transition: height 0.3s ease;
+}
+
+.error-active{
+    height: auto;
 }
 
 .tip-amount-info, .container-total-div{
@@ -167,6 +229,12 @@ main{
     border-radius: 5px;
     padding: 10px;
     font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background: var(--Light-grayish-cyan);
 }
 
 .attribution { font-size: 11px; text-align: center; }
