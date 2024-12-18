@@ -122,11 +122,11 @@ main{
     flex-wrap: wrap;
     gap: 20px;
 }
-.porcentage-number, .cutom{
+.porcentage-number, .custom{
     width: 117px;
     height: 48px;
     background: var(--Very-dark-cyan);
-    border-radius: 10px;
+    border-radius: 5px;
     color: var(--Light-grayish-cyan);
     display: flex;
     justify-content: center;
@@ -157,6 +157,7 @@ main{
 
 .custom::placeholder{
     text-align: center;
+    color: var(--Dark-grayish-cyan);
 }
 
 .container-amount{
@@ -239,3 +240,46 @@ main{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a {font-size: 11px; color: hsl(228, 45%, 44%); }
+
+@media (width <= 600px) {
+    main{
+        width: 100%;
+    }
+    
+    .container-general{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container-inputs{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .percentage{
+        justify-content: space-between;
+    }
+
+    .porcentage-number, .custom{
+        width: 47%;
+    }
+
+    .container-amount{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .container-amount-total{
+        gap: 20px;
+    }
+
+    .tip-amount, .container-total{
+        justify-content: space-between;
+        gap: 0;
+    }
+    
+    .input-bill, .number-people{
+        width: 88%;
+    }
+}
