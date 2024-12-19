@@ -24,12 +24,14 @@ namespace challenge18 {
         console.log(addInpuNumberPeople)
     })
 
+    // funcion para hacer operacion matematica
+    const match = (number: number, person: number, porcentage:number): number[]=>{
+        let division: number = Number((number/person))
+        let porcentageOperation: number = Number((((number * porcentage) / 100)/person).toFixed(2))
+        let result: number = division + porcentageOperation
+        return [porcentageOperation, result]
+    }
 
-    // este es un boton de prueba
-    reset.addEventListener("click", ()=>{
-        console.log("Este es el valor del dinero: ",addInputBill)
-        console.log("Esta es la cantidad de personas: ", addInpuNumberPeople)
-    })
 
 
     const clicked = () =>{
@@ -41,6 +43,10 @@ namespace challenge18 {
                 clickedText = Number(element.textContent?.replace("%", "")) // Number() combierte un string en Number (La inicial debe estar en mayuscula)
                 console.log(clickedText)
 
+                let [tipAmount, total] = match(addInputBill, addInpuNumberPeople, clickedText) //desestructure el array que devuelve la funcion para hacer un solo llamado
+                console.log(tipAmount)
+                console.log(total)
+
             })
         });
         
@@ -50,30 +56,5 @@ namespace challenge18 {
     clicked()
 }
 
-let number: number = 142.55
-let person: number = 5
-let porcentag1: number = 15
-let result: number
 
-console.log(number)
-console.log(person)
 
-const match = ()=>{
-    let division: number = Number((number/person))
-    console.log("valor a pagar sin interes: ",division)
-    
-    let porcentageOperation: number = Number((((number * porcentag1) / 100)/person).toFixed(2))
-    console.log("porcentaje del valor total dividido entre las personas a pagar: ", porcentageOperation)
-
-    result = division + porcentageOperation
-    console.log(result)
-
-    return [porcentageOperation, result]
-}
-
-console.log(match())
-let resultado1 = match()[0]
-let resultado2 =match()[1]
-
-resultado1
-resultado2

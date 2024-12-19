@@ -19,11 +19,13 @@ var challenge18;
         addInpuNumberPeople = Number(inputNumberPeople.value);
         console.log(addInpuNumberPeople);
     });
-    // este es un boton de prueba
-    reset.addEventListener("click", () => {
-        console.log("Este es el valor del dinero: ", addInputBill);
-        console.log("Esta es la cantidad de personas: ", addInpuNumberPeople);
-    });
+    // funcion para hacer operacion matematica
+    const match = (number, person, porcentage) => {
+        let division = Number((number / person));
+        let porcentageOperation = Number((((number * porcentage) / 100) / person).toFixed(2));
+        let result = division + porcentageOperation;
+        return [porcentageOperation, result];
+    };
     const clicked = () => {
         porcentage.forEach(element => {
             element.addEventListener("click", () => {
@@ -32,28 +34,11 @@ var challenge18;
                 element.classList.toggle("porcentage-number-active");
                 clickedText = Number((_a = element.textContent) === null || _a === void 0 ? void 0 : _a.replace("%", "")); // Number() combierte un string en Number (La inicial debe estar en mayuscula)
                 console.log(clickedText);
+                let [tipAmount, total] = match(addInputBill, addInpuNumberPeople, clickedText); //desestructure el array que devuelve la funcion para hacer un solo llamado
+                console.log(tipAmount);
+                console.log(total);
             });
         });
     };
     clicked();
 })(challenge18 || (challenge18 = {}));
-let number = 142.55;
-let person = 5;
-let porcentag1 = 15;
-let result;
-console.log(number);
-console.log(person);
-const match = () => {
-    let division = Number((number / person));
-    console.log("valor a pagar sin interes: ", division);
-    let porcentageOperation = Number((((number * porcentag1) / 100) / person).toFixed(2));
-    console.log("porcentaje del valor total dividido entre las personas a pagar: ", porcentageOperation);
-    result = division + porcentageOperation;
-    console.log(result);
-    return [porcentageOperation, result];
-};
-console.log(match());
-let resultado1 = match()[0];
-let resultado2 = match()[1];
-resultado1;
-resultado2;
