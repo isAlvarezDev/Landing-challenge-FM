@@ -1,5 +1,12 @@
 [
     {
+        "url": "./retos/reto-18/index.html",
+        "imgUrl":"./retos/reto-18/tip-calculator-app-main/design/desktop-design-empty.jpg",
+        "name": "Tip Calculator App",
+        "description": "Una calculadora interactiva que permite dividir el costo total de una cuenta, incluyendo un porcentaje de propina, entre varias personas. Proporciona validación de entradas y cálculos en tiempo real.",
+        "filter": "Junior"
+    },
+    {
         "url": "./retos/reto-17/index.html",
         "imgUrl":"./retos/reto-17/time-tracking-dashboard-main/design/desktop-design.jpg",
         "name": "Time tracking dashboard main",

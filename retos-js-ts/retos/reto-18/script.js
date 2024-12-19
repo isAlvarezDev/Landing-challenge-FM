@@ -27,10 +27,11 @@ var challenge18;
     const match = (number, person, porcentage) => {
         let division = Number((number / person));
         let porcentageOperation = Number((((number * porcentage) / 100) / person).toFixed(2));
-        let result = division + porcentageOperation;
+        let result = Number((division + porcentageOperation).toFixed(2));
         return [porcentageOperation, result];
     };
     const testing = () => {
+        inputBill.value === "" ? inputBill.classList.add("input-bill-error") : inputBill.classList.remove("input-bill-error");
         if (inputNumberPeople.value === "") {
             inputNumberPeople.classList.add("number-people-error");
             error.classList.add("error-active");
@@ -44,7 +45,6 @@ var challenge18;
         porcentage.forEach(element => {
             element.addEventListener("click", () => {
                 var _a;
-                inputBill.value === "" ? inputBill.classList.add("input-bill-error") : inputBill.classList.remove("input-bill-error");
                 testing();
                 if (!(inputBill.value === "" || inputNumberPeople.value === "")) {
                     inputBill.classList.remove("input-bill-error");
@@ -68,5 +68,14 @@ var challenge18;
         resultTipAmount.innerHTML = `0.00`;
         resultTotal.innerHTML = `0.00`;
         porcentage.forEach(el => el.classList.remove("porcentage-number-active"));
+    });
+    custom.addEventListener("input", () => {
+        testing();
+        let inputValue = Number(custom.value);
+        if (!(inputBill.value === "" || inputNumberPeople.value === "")) {
+            let [tipAmount, total] = match(addInputBill, addInpuNumberPeople, inputValue);
+            resultTipAmount.innerHTML = `${tipAmount}`;
+            resultTotal.innerHTML = `${total}`;
+        }
     });
 })(challenge18 || (challenge18 = {}));

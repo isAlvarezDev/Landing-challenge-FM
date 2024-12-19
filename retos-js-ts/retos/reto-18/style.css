@@ -168,6 +168,7 @@ main{
     justify-content: space-between;
     background: var(--Very-dark-cyan);
     color: var(--Light-grayish-cyan);
+    width: 700px;
 }
 
 .label-container{
@@ -197,13 +198,14 @@ main{
 .container-amount-total{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 50px;
 }
 
 .tip-amount, .container-total{
     display: flex;
     align-items: center;
-    gap: 150px;
+    justify-content: space-between;
 }
 
 .amount, .total-text{
