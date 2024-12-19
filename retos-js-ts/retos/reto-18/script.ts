@@ -49,3 +49,31 @@ namespace challenge18 {
 
     clicked()
 }
+
+let number: number = 142.55
+let person: number = 5
+let porcentag1: number = 15
+let result: number
+
+console.log(number)
+console.log(person)
+
+const match = ()=>{
+    let division: number = Number((number/person))
+    console.log("valor a pagar sin interes: ",division)
+    
+    let porcentageOperation: number = Number((((number * porcentag1) / 100)/person).toFixed(2))
+    console.log("porcentaje del valor total dividido entre las personas a pagar: ", porcentageOperation)
+
+    result = division + porcentageOperation
+    console.log(result)
+
+    return [porcentageOperation, result]
+}
+
+console.log(match())
+let resultado1 = match()[0]
+let resultado2 =match()[1]
+
+resultado1
+resultado2
