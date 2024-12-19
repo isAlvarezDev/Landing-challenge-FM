@@ -129,3 +129,5 @@ reset.addEventListener("click", () => {
 ---
 
 _Desafío basado en un proyecto de [Frontend Mentor](https://www.frontendmentor.io/)._
+
+*gracias*
