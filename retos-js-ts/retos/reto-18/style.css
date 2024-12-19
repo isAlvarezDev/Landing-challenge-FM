@@ -107,7 +107,7 @@ main{
     border: 2px solid var(--Dark-grayish-cyan);
 }
 
-.number-people-error{
+.number-people-error, .input-bill-error{
     border: 2px solid red;
 }
 
@@ -177,15 +177,15 @@ main{
 }
 
 .error{
-    font-size: 10px;
+    font-size: 14px;
     height: 0;
     overflow: hidden;
     color: red;
-    transition: height 0.3s ease;
+    transition: height 0.2s ease;
 }
 
 .error-active{
-    height: auto;
+    height: 20px;
 }
 
 .tip-amount-info, .container-total-div{
@@ -221,6 +221,10 @@ main{
     font-weight: 700;
     font-size: 40px;
     color: var(--Strong-cyan);
+}
+
+.t-a, .t-t{
+    font-size: 40px;
 }
 
 .reset{
