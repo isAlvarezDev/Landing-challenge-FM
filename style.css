@@ -44,6 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 550px;
 }
 
 .title{
@@ -56,26 +57,17 @@ body{
     padding: 20px 0;
 }
 
-.img {
-    width: 200px;
-    height: 200px;
-    min-width: 150px;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    /* border-radius: 40%; */ /* esto esta horrible, debo corregir la foto obviamente */
-}
-
 .photo {
-    width: 120px; 
-    height: 100px;
+    width: 200px; 
+    height: 200px;
+    padding: 5px;
     object-fit: contain;
     border-radius: 50%;
-    /* mask-image: linear-gradient(black 80%, transparent); */
+    border: 1px solid black;
+    /* mask-image: linear-gradient(white 80%, transparent); */
 }
 
-.photo-mobile, .img-mobile{
+.photo-mobile{
     display: none;
 }
 
@@ -98,12 +90,13 @@ body{
 
 .cards{
     display: flex;
+    justify-content: space-between;
     padding: 10px;
     gap: 20px;
 }
 
 .card{
-    max-width: 500px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -119,10 +112,6 @@ body{
     
 }
 
-.img-fm-html, .img-fm-ts{
-    width: 50px;
-}
-
 .thanks {
     font-size: 10px;
     max-width: 750px;
@@ -132,6 +121,17 @@ body{
 }
 
 @media (width <= 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+    
     .container{
         width: 100%;
     }
@@ -150,21 +150,46 @@ body{
         display: none;
     }
 
-    .img-mobile{
-        display: block;
-        width: 50px;
-    }
-
     .photo-mobile{
-        width: 80%;
+        width: 100px;
+        height: 100px;
         display: block;
+        padding: 2px;
     }
 
     .title{
         text-align: center;
+        font-size: 30px;
     }
 
     .cards{
         flex-direction: column;
     }
+
+    .card{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .icon-challenge{
+        width: 100px;
+    }
+
+    .p-ts{
+        width: 500px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .thanks{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        font-size: 10px;
+    }
+
 }
