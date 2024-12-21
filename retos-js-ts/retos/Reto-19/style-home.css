@@ -1,5 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+}
+
+:root{
+    --font-family: "Agdasima", serif;
+    --white: white;
+    --color-font: #C9CBDF;
+}
+
+body{
+    font-family: var(--font-family);
+    color: var(--white);
+    background-image: url(space-tourism-website-main/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    position: relative;
+}
+
+.list{
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px 150px 0 100px;
+}
+
+.item{
+    width: auto;
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+
+.home{
+    border-bottom: 1px solid var(--white);
+    
+}
+
+.line{
+    position: absolute;
+    width: 520px;
+    height: 0px;
+    border-bottom: 1px solid gray;
+    left: 150px;
+}
+
+/* MAIN */
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: self-end;
+}
+
+.text1{
+    font-size: 35px;
+    color: var(--color-font);
+}
+
+.name{
+    font-size: 150px;
+    padding: 20px 0;
+}
+
+.text2{
+    color: var(--color-font);
+    max-width: 350px;
+}
+
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 250px;
+    height: 250px;
+    color: black;
+    background: var(--white);
+    border-radius: 50%;
+    font-weight: 100;
 }
