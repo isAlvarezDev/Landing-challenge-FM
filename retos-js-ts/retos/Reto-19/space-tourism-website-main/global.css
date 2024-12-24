@@ -1,9 +1,19 @@
-/*Space for font*/
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+:root{
+    --font-family: "Agdasima", serif;
+    --white: #EAEAEA;
+    --color-font: #C9CBDF;
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    color: var(--white);
 }
 
 header {
@@ -37,10 +47,16 @@ nav {
     width: auto;
     cursor: pointer;
     padding-bottom: 30px;
+    font-weight: 200;
 }
 
 .home{
-    border-bottom: 1px solid var(--white);
+    border-bottom: 3px solid var(--white);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .line{
