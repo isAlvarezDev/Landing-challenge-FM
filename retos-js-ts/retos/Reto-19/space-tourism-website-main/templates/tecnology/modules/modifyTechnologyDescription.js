@@ -1,2 +1,2 @@
-export const modifyTechnologyDescription = async (techObject, description, index) => 
-    description.textContent = techObject[index].description
+export const modifyTechnologyDescription = async (techObject, p, index) => 
+    p.textContent = techObject[index].description
