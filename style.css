@@ -126,12 +126,26 @@ body{
     font-weight: 700;
 }
 
+footer{
+    padding-bottom: 20px;
+}
+
 .thanks {
     font-size: 10px;
     max-width: 750px;
     text-align: center;
     margin: 20px 0;
     font-weight: 400;
+}
+
+.social-networks{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social{
+    all: inherit;
 }
 
 @media (width <= 600px) {
