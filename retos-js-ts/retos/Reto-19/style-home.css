@@ -32,6 +32,12 @@ nav{
     position: relative;
 }
 
+.nav-menu{
+    all: initial;
+    width: fit-content;
+    color: var(--color-font);
+}
+
 .list{
     width: 800px;
     position: absolute;
@@ -48,8 +54,7 @@ nav{
 }
 
 .item{
-    width: auto;
-    cursor: pointer;
+    width: fit-content;
     padding-bottom: 30px;
 }
 
